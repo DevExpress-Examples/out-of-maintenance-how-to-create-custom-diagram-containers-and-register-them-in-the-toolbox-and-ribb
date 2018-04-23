@@ -1,0 +1,88 @@
+﻿<p:ResourceDictionary 
+    xmlns="http://schemas.devexpress.com/winfx/2008/xaml/diagram"
+    xmlns:p="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ContainerShapeTemplate
+        x:Key="{ShapeKey Frame}"
+        DefaultSize="200,200"
+        Id="Frame"
+        Style="ShapeId.Moderate5">
+        <Start X="0" Y="0" />
+        <Line X="1" Y="0" />
+        <Line X="1" Y="1" />
+        <Line X="0" Y="1" />
+
+        <Start
+            FillColor="White"
+            X="PaddingRatio.Left"
+            Y="(HeaderHeightRatio + PaddingRatio.Top)" />
+        <Line X="1 - PaddingRatio.Right" Y="(HeaderHeightRatio + PaddingRatio.Top)" />
+        <Line X="1 - PaddingRatio.Right" Y="1 - PaddingRatio.Bottom" />
+        <Line X="PaddingRatio.Left" Y="1 - PaddingRatio.Bottom" />
+    </ContainerShapeTemplate>
+
+    <ContainerShapeTemplate
+        x:Key="{ShapeKey Frame1}"
+        Id="Frame1"
+        Style="ShapeId.Moderate6"
+        DefaultSize="200,200"
+        EditorBounds="CreateRect(0,Height - HeaderHeight,Width,HeaderHeight)"
+        ActualPadding="CreatePadding(Padding.Left, Padding.Top, Padding.Right, Padding.Bottom + HeaderHeight)">
+        <Start X="0" Y="0" />
+        <Line X="1" Y="0" />
+        <Line X="1" Y="1" />
+        <Line X="0" Y="1" />
+
+        <Start X="PaddingRatio.Left" Y="PaddingRatio.Top" FillColor="White" />
+        <Line X="1 - PaddingRatio.Right" Y="PaddingRatio.Top" />
+        <Line X="1 - PaddingRatio.Right" Y="1 - PaddingRatio.Bottom - HeaderHeightRatio" />
+        <Line X="PaddingRatio.Left" Y="1 - PaddingRatio.Bottom - HeaderHeightRatio" />
+    </ContainerShapeTemplate>
+
+    <ContainerShapeTemplate 
+        x:Key="{ShapeKey Frame2}"
+        Id="Frame2" 
+        Style="ShapeId.Moderate7"
+        DefaultSize="200,200" 
+        EditorBounds="CreateRect(0,-HeaderHeight,Width,HeaderHeight)"
+        ActualPadding="Padding"
+        UseBackgroundAsForeground="true">
+        <Start X="0" Y="0" />
+        <Line X="1" Y="0" />
+        <Line X="1" Y="1" />
+        <Line X="0" Y="1" />
+
+        <Start X="PaddingRatio.Left" Y="PaddingRatio.Top" FillColor="White" />
+        <Line X="1 - PaddingRatio.Right" Y="PaddingRatio.Top" />
+        <Line X="1 - PaddingRatio.Right" Y="1 - PaddingRatio.Bottom" />
+        <Line X="PaddingRatio.Left" Y="1 - PaddingRatio.Bottom" />
+    </ContainerShapeTemplate>
+
+    <ContainerShapeTemplate
+        x:Key="{ShapeKey HeaderFrame}"
+        DefaultSize="200,200"
+        Id="HeaderFrame"
+        Style="ShapeId.Moderate3"
+        UseBackgroundAsForeground="true">
+        <Start
+            FillColor="White"
+            X="0"
+            Y="0" />
+        <Line X="1" Y="0" />
+        <Line X="1" Y="1" />
+        <Line X="0" Y="1" />
+
+        <Start X="0" Y="0" />
+        <Line X="1" Y="0" />
+        <Line X="1" Y="HeaderHeightRatio" />
+        <Line X="0" Y="HeaderHeightRatio" />
+
+        <Start
+            FillColor="White"
+            X="HeaderPaddingRatio.Left"
+            Y="HeaderPaddingRatio.Top" />
+        <Line X="1 - HeaderPaddingRatio.Right" Y="HeaderPaddingRatio.Top" />
+        <Line X="1 - HeaderPaddingRatio.Right" Y="(HeaderHeightRatio - HeaderPaddingRatio.Bottom)" />
+        <Line X="HeaderPaddingRatio.Left" Y="(HeaderHeightRatio - HeaderPaddingRatio.Bottom)" />
+    </ContainerShapeTemplate>
+</p:ResourceDictionary>
