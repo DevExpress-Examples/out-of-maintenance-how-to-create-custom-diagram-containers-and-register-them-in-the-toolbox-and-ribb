@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[CustomContainers.xaml](./CS/DXDiagram.CreateCustomContainers/CustomContainers.xaml) (VB: [CustomContainers.xaml](./VB/DXDiagram.CreateCustomContainers/CustomContainers.xaml))**
+* [MainWindow.xaml](./CS/DXDiagram.CreateCustomContainers/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/DXDiagram.CreateCustomContainers/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/DXDiagram.CreateCustomContainers/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXDiagram.CreateCustomContainers/MainWindow.xaml.vb))
+<!-- default file list end -->
 # How to create custom diagram containers and register them in the toolbox and ribbon gallery
 
 
