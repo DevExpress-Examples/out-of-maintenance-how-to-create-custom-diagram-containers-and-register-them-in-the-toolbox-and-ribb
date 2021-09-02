@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXDiagram.CreateCustomContainers", "DXDiagram.CreateCustomContainers\DXDiagram.CreateCustomContainers.vbproj", "{AA115675-28D5-4197-B6A4-0EA761021D19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXDiagram.CreateCustomContainers", "DXDiagram.CreateCustomContainers\DXDiagram.CreateCustomContainers.Net5.csproj", "{AA115675-28D5-4197-B6A4-0EA761021D19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
